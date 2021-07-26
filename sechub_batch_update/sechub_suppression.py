@@ -28,6 +28,13 @@ class SecurityHubSuppression(core.Construct):
                     "GeneratorId": generator_ids,
                     "AwsAccountId": props["account_numbers"],
                     "Workflow": {"Status": ["NEW"]},
+                    "Resources": {
+                    "Details": {
+                        "AwsEc2Instance": {
+                            "VpcId": [
+                                "vpc-067f690cb0a435465"
+                            ]}}
+                    },
                 },
             },
         )

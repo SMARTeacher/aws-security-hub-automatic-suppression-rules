@@ -43,7 +43,7 @@ class SechubBatchUpdateStack(core.Stack):
             "GeneratorIds",
             type="CommaDelimitedList",
             description="The SecurityHub generator ids to suppress",
-            default="aws-foundational-security-best-practices/v/1.0.0/EC2.6",
+            default="aws-foundational-security-best-practices/v/1.0.0/EC2.9",
         )
 
         account_numbers = account_numbers_parameter.value_as_list
